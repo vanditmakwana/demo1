@@ -11,7 +11,7 @@ print("minimum number(using loop)",min1)
 print("maximum number(using loop)",max1)
 
 b=min(a)
-print("minimum number is ",b)
+print("minimum number is",b)
 
 c=max(a)
-print("maximum number is ",c)   
+print("maximum number is",c)   
