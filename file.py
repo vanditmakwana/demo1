@@ -1,0 +1,5 @@
+f=open("demo.txt","w")
+# content=f.read(10)
+# print(content)
+f.write("hello world")
+f.close()
