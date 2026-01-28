@@ -1,5 +1,14 @@
 from collections import deque
 
+graph={
+    'a':['b','c'],
+    'b':['d','e'],
+    'c':['f'],
+    'd':[],
+    'e':[],
+    'f':[]
+}
+
 def bfs(graph,start):
     visited=set()
     queue=deque()
@@ -10,18 +19,9 @@ def bfs(graph,start):
         node=queue.popleft()
         print(node,end=" ")
 
-        for nabiuger in graph[node]:
-            if nabiuger not in visited:
-                visited.add(nabiuger)
-                queue.append(nabiuger)
-
-graph={
-    'a':['b','c'],
-    'b':['d','e'],
-    'c':['f'],
-    'd':[],
-    'e':[],
-    'f':[]
-}
+        for i in graph[node]:
+            if i not in visited:
+                visited.add(i)
+                queue.append(i)
 
 bfs(graph,'a')
